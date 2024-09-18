@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre de Formation Professionnelle de Yangasso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">CFP Yangasso</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#accueil" class="hover:underline">Accueil</a></li>
+                    <li><a href="#mot-directeur" class="hover:underline">Mot du Directeur</a></li>
+                    <li><a href="#filieres" class="hover:underline">Filières</a></li>
+                    <li><a href="#inscription" class="hover:underline">Inscription</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="accueil" class="bg-white py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-blue-600 text-center">Bienvenue au Centre de Formation Professionnelle de Yangasso</h2>
+                <div class="flex items-center">
+                    <img src="https://placehold.co/600x400" alt="Image du centre" class="w-1/2 mr-8 rounded-lg shadow-lg">
+                    <div class="w-1/2 text-lg">
+                        <p class="text-gray-700 mb-4">Le Centre de Formation Professionnelle de Yangasso est un établissement d'excellence dédié à la formation de techniciens qualifiés dans des domaines cruciaux pour le développement de notre région.</p>
+                        <p class="text-gray-700 mb-4">Fondé en 2015, notre centre offre des formations pratiques et théoriques de haute qualité, adaptées aux besoins du marché du travail local et national. Nous nous engageons à fournir à nos étudiants les compétences nécessaires pour réussir dans leur carrière et contribuer au progrès de notre communauté.</p>
+                        <p class="text-gray-700 mb-4">Nos installations modernes, nos formateurs expérimentés et nos partenariats avec des entreprises locales font du CFP Yangasso un choix idéal pour les jeunes aspirant à une carrière technique prometteuse.</p>
+                        <p class="text-gray-700">Découvrez nos filières spécialisées et rejoignez-nous pour construire ensemble un avenir brillant !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mot-directeur" class="bg-blue-100 py-16 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-blue-600">Mot du Directeur Général</h2>
+                <div class="flex items-start">
+                    <img src="images/dg.png" alt="Photo du Directeur" class="w-1/3 rounded-full mr-8">
+                    <div class="text-lg">
+                        <p class="text-gray-700 mb-4">Chers visiteurs, élèves potentiels et partenaires,</p>
+                        <p class="text-gray-700 mb-4">C'est avec un grand plaisir que je vous souhaite la bienvenue au Centre de Formation Professionnelle de Yangasso. Notre mission est de former les talents de demain, en offrant une éducation de qualité axée sur les compétences pratiques et les besoins du marché du travail.</p>
+                        <p class="text-gray-700 mb-4">Au CFP Yangasso, nous croyons en l'importance de l'innovation, de la persévérance et de l'excellence. Nos programmes en mécanique, électronique et électricité photovoltaïque sont conçus pour vous donner les outils nécessaires pour réussir dans un monde en constante évolution.</p>
+                        <p class="text-gray-700">Je vous invite à explorer notre site, à découvrir nos filières et à nous rejoindre dans cette aventure passionnante qu'est l'apprentissage d'un métier. Ensemble, construisons un avenir brillant pour vous et pour notre communauté.</p>
+                        <p class="font-semibold mt-4">- Niassian A. TINA, Directeur du CFP Yangasso</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="filieres" class="bg-white py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-blue-600 text-center">Nos Filières</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-blue-50 p-6 rounded-lg shadow-lg hover:scale-110 transition-transform duration-300">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-600">Mécanique  des engins à 2 roues</h3>
+                        <img src="images/meca.jpeg" alt="Mécanique" class="w-full h-48 object-cover mb-4 rounded">
+                        <p class="text-gray-700">Notre formation en mécanique des engins à 2 roues vous prépare à devenir un expert dans la réparation et l'entretien des motos et scooters. Vous apprendrez les techniques de diagnostic, la réparation des moteurs, des systèmes de transmission et des composants électriques. Cette filière répond à une forte demande dans notre région où les deux-roues sont très populaires.</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-lg shadow-lg hover:scale-110 transition-transform duration-300">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-600">Électronique</h3>
+                        <img src="images/elect.webp" alt="Électronique" class="w-full h-48 object-cover mb-4 rounded">
+                        <p class="text-gray-700">La filière électronique vous forme aux technologies modernes utilisées dans les appareils électroniques. Vous étudierez les circuits imprimés, les microcontrôleurs, et les systèmes de communication. Cette formation vous permettra de travailler dans divers domaines tels que la maintenance d'équipements électroniques, la conception de circuits, ou l'installation de systèmes de sécurité.</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-lg shadow-lg hover:scale-110 transition-transform duration-300">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-600">Électricité Photovoltaïque</h3>
+                        <img src="images/panneaux.webp" alt="Électricité Photovoltaïque" class="w-full h-48 object-cover mb-4 rounded">
+                        <p class="text-gray-700">Notre formation en électricité photovoltaïque vous prépare à l'installation et à la maintenance de systèmes solaires. Vous apprendrez à dimensionner, installer et entretenir des panneaux solaires et leurs composants associés. Cette filière est particulièrement pertinente dans notre région ensoleillée et répond aux besoins croissants en énergie renouvelable et en électrification rurale.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="inscription" class="bg-blue-100 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-blue-600 text-center">Informations d'Inscription</h2>
+                <div class="flex items-center">
+                    <div class="w-2/3 pr-8 text-lg">
+                        <p class="text-gray-700 mb-4">L'inscription au Centre de Formation Professionnelle de Yangasso est ouverte à tous les jeunes désireux d'acquérir des compétences pratiques dans nos domaines de spécialisation. Notre processus d'admission est conçu pour être accessible et équitable.</p>
+                        <p class="text-gray-700 mb-4">Pour vous inscrire, veuillez vous présenter à notre secrétariat avec les documents suivants :</p>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>Une copie de votre carte d'identité ou extrait de naissance</li>
+                            <li>Votre dernier diplôme ou certificat d'études</li>
+                            <li>Trois photos d'identité récentes</li>
+                            <li>Un certificat de résidence</li>
+                            <li>Les frais d'inscription (montant à confirmer auprès du secrétariat)</li>
+                        </ul>
+                        <p class="text-gray-700 mt-4">Les inscriptions sont ouvertes du 1er juillet au 30 septembre de chaque année. Les cours débutent généralement en octobre. Pour plus d'informations, n'hésitez pas à nous contacter ou à vous rendre directement dans nos locaux.</p>
+                    </div>
+                    <img src="images/inscr.png" alt="Inscription" class="w-1/3 rounded-lg shadow">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-blue-600 text-center">Contactez-nous</h2>
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 mb-8 md:mb-0 pr-0 md:pr-8">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-600">Coordonnées</h3>
+                        <p class="text-gray-700 mb-2">Adresse : 123 Rue de la Formation, Yangasso, Mali</p>
+                        <p class="text-gray-700 mb-2">Téléphone : +223 76 16 20 38</p>
+                        <p class="text-gray-700 mb-2">Email : contact@cfpyangasso.ml</p>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-600">Formulaire de contact</h3>
+                        <form>
+                            <input type="text" placeholder="Nom" class="w-full mb-4 p-2 border rounded">
+                            <input type="email" placeholder="Email" class="w-full mb-4 p-2 border rounded">
+                            <textarea placeholder="Message" class="w-full mb-4 p-2 border rounded" rows="4"></textarea>
+                            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Centre de Formation Professionnelle de Yangasso. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
