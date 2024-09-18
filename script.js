@@ -1,29 +1,41 @@
 // Attendre que le DOM soit complètement chargé
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling pour les liens d'ancrage
+    initializeSmoothScrolling();
+    setupContactForm();
+    initializeScrollAnimation();
+});
+
+// Fonction pour initialiser le défilement fluide
+function initializeSmoothScrolling() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
+            const targetId = this.getAttribute('href');
+            document.querySelector(targetId).scrollIntoView({
                 behavior: 'smooth'
             });
         });
     });
+}
 
-    // Gestion du formulaire de contact
+// Fonction pour configurer le formulaire de contact
+function setupContactForm() {
     const contactForm = document.querySelector('#contact form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            // Ici, vous pouvez ajouter la logique pour envoyer le formulaire
-            // Par exemple, avec fetch() ou XMLHttpRequest
-            alert('Merci pour votre message. Nous vous contacterons bientôt !');
-            this.reset();
+            if (validateForm()) {
+                // Ici, vous pouvez ajouter la logique pour envoyer le formulaire
+                // Par exemple, avec fetch() ou XMLHttpRequest
+                alert('Merci pour votre message. Nous vous contacterons bientôt !');
+                this.reset();
+            }
         });
     }
+}
 
-    // Animation simple pour les sections au défilement
+// Fonction pour initialiser l'animation au défilement
+function initializeScrollAnimation() {
     const sections = document.querySelectorAll('main section');
     const observerOptions = {
         root: null,
@@ -43,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     sections.forEach(section => {
         observer.observe(section);
     });
-});
+}
 
 // Fonction pour valider le formulaire de contact
 function validateForm() {
